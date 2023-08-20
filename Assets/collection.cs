@@ -11,6 +11,7 @@ public class collection : MonoBehaviour
     [SerializeField] Text hintText;
     [SerializeField] Button replay;
     [SerializeField] Button exit;
+    [SerializeField] RawImage background;
     [SerializeField] int maxScore;
     public int score=0;
 
@@ -29,6 +30,7 @@ public class collection : MonoBehaviour
                 WonText.gameObject.SetActive(true);
                 replay.gameObject.SetActive(true);
                 exit.gameObject.SetActive(true);
+                background.gameObject.SetActive(true);
                 Cursor.visible =true;
             }
         }
@@ -36,6 +38,7 @@ public class collection : MonoBehaviour
             OverText.gameObject.SetActive(true);
             replay.gameObject.SetActive(true);
             exit.gameObject.SetActive(true);
+            background.gameObject.SetActive(true);
             Cursor.visible =true;
             Time.timeScale = 0f;
         }
